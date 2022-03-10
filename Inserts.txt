@@ -1,0 +1,104 @@
+INSERT INTO Poczty (Kod_pocztowy, Miasto) VALUES('00-123', 'Warszawa');
+INSERT INTO Poczty (Kod_pocztowy, Miasto) VALUES('00-543', 'Warszawa');
+INSERT INTO Poczty (Kod_pocztowy, Miasto) VALUES('05-473', 'Mińsk Mazowiecki');
+INSERT INTO Poczty (Kod_pocztowy, Miasto) VALUES('40-153', 'Gdańsk');
+
+
+INSERT INTO Domy_Kultury (Nazwa, Data_zalozenia, Dyrektor, ID_Adresu) VALUES('Nadbałtycki Dom Kultury', TO_DATE('12/01/2000', 'dd/mm/yyyy'), 'Adam Michałowicz', 1);
+
+
+INSERT INTO Adresy (Ulica, Nr_domu, Nr_mieszkania, ID_Poczty) VALUES('Chopina', 20, 2, 3);
+INSERT INTO Adresy (Ulica, Nr_domu, Nr_mieszkania, ID_Poczty) VALUES('Aleje Ujazdowskie', 443, 2, 2);
+INSERT INTO Adresy (Ulica, Nr_domu, Nr_mieszkania, ID_Poczty) VALUES('Chopina', 43, 1, 1);
+INSERT INTO Adresy (Ulica, Nr_domu, Nr_mieszkania, ID_Poczty) VALUES('Feliksa Nowowiejskiego', 25, 1a, 4);
+INSERT INTO Adresy (Ulica, Nr_domu, Nr_mieszkania, ID_Poczty) VALUES('Chłopska', 20, 2, 3);
+INSERT INTO Adresy (Ulica, Nr_domu, ID_Poczty) VALUES('Feliksa Nowowiejskiego', 40, 4);
+INSERT INTO Adresy (Ulica, Nr_domu, Nr_mieszkania, ID_Poczty) VALUES('Arbiturów', 3, '4b', 3);
+
+
+INSERT INTO Stanowiska (Nazwa_Stanowiska, Opis_stanowiska) VALUES ('Nauczyciel języka angielskiego', 'Nauczyciel języka angielskiego na poziomie A2');
+INSERT INTO Stanowiska (Nazwa_Stanowiska) VALUES ('Pracownik kina');
+INSERT INTO Stanowiska (Nazwa_Stanowiska) VALUES ('Nauczyciel Tańca towarzystkiego');
+INSERT INTO Stanowiska (Nazwa_Stanowiska, Opis_stanowiska) VALUES ('Nauczyciel języka hiszpańskiego', 'Nauczyciel języka hiszpańskiego na poziomie A1');
+
+
+INSERT INTO Uczestnicy (Imie, Nazwisko, Plec, Data_Urodzenia, Email, ID_Adresu) VALUES('Adam', 'Wojnarowski', 'Mezczyzna', TO_DATE('14/02/2000', 'dd/mm/yyyy'), 'adamwojnarowski1@gmail.com', 2);
+INSERT INTO Uczestnicy (Imie, Nazwisko, Plec, Data_Urodzenia, Email, ID_Adresu) VALUES('Michał', 'Wojnarowski', 'Mezczyzna', TO_DATE('14/02/2000', 'dd/mm/yyyy'), 'michalwojnarowski53@gmail.com', 2);
+INSERT INTO Uczestnicy (Imie, Nazwisko, Plec, Data_Urodzenia, Numer_telefonu, Email, ID_Adresu) VALUES('Paweł', 'Gortat', 'Mezczyzna', TO_DATE('29/06/2004', 'dd/mm/yyyy'), '126784567', 'adjkdjkdsfgk1@wp.pl', 3);
+INSERT INTO Uczestnicy (Imie, Nazwisko, Plec, Data_Urodzenia, Numer_telefonu, Email, ID_Adresu) VALUES('Julia', 'Wieniawa', 'Kobieta', TO_DATE('04/12/2008', 'dd/mm/yyyy'), '456289654','kochamkoty432532@gmail.com', 4);
+
+
+INSERT INTO PRACOWNICY (Imie, Nazwisko, Data_urodzenia, PESEL, Nr_telefonu, Email, Plec, Data_zatrudnienia, ID_Domu, ID_Adresu, ID_stanowiska) VALUES ('Stefan', 'Baczyński', TO_DATE('14/07/1998', 'dd/mm/yyyy'),'19980714123','123456789', 'stefanb123@gmail.com', 'Mezczyzna', TO_DATE('14/07/2012', 'dd/mm/yyyy'), 1, 5, 1);
+INSERT INTO PRACOWNICY (Imie, Nazwisko, Data_urodzenia, PESEL, Nr_telefonu, Email, Plec, Data_zatrudnienia, ID_Domu, ID_Adresu, ID_stanowiska) VALUES ('Emila', 'Adamska', TO_DATE('23/08/1997', 'dd/mm/yyyy'), '19970823456', '789456123','anitaolga@gmail.com', 'Kobieta', TO_DATE('06/07/2013', 'dd/mm/yyyy'), 1, 6, 2);
+INSERT INTO PRACOWNICY (Imie, Nazwisko, Data_urodzenia, PESEL, Nr_telefonu, Email, Plec, Data_zatrudnienia, ID_Domu, ID_Adresu, ID_stanowiska) VALUES ('Micha', 'Dworak', TO_DATE('24/06/1996', 'dd/mm/yyyy'), '19960624456','598456123', 'kochamkocty@gmail.com', 'Mezczyzna', TO_DATE('14/06/2014', 'dd/mm/yyyy'), 1, 4, 3);
+INSERT INTO PRACOWNICY (Imie, Nazwisko, Data_urodzenia, Email, Plec, Data_zatrudnienia, ID_Domu, ID_Adresu, ID_stanowiska) VALUES ('Kamil', 'Baczyński', TO_DATE('14/07/1998', 'dd/mm/yyyy'), 'jkrfshjsfjk@gmail.com', 'Mezczyzna', TO_DATE('18/02/2013', 'dd/mm/yyyy'), 1, 5, 3);
+INSERT INTO PRACOWNICY (Imie, Nazwisko, Data_urodzenia, Email, Plec, Data_zatrudnienia, ID_Domu, ID_Adresu, ID_stanowiska) VALUES ('Olga', 'Tuszyńska', TO_DATE('14/09/1995', 'dd/mm/yyyy'), 'wojkte@gmail.com', 'Kobieta', TO_DATE('13/07/2014', 'dd/mm/yyyy'), 1, 3, 4);
+
+
+INSERT INTO Wynagrodzenia (Data_wyslania_wynagrodzenia,Kwota_wynagrodzenia, ID_Pracownika) VALUES (TO_DATE('10/10/2020', 'dd/mm/yyyy'), 3000, '1');
+INSERT INTO Wynagrodzenia (Data_wyslania_wynagrodzenia,Kwota_wynagrodzenia, ID_Pracownika) VALUES (TO_DATE('10/10/2020', 'dd/mm/yyyy'), 3200, '2');
+INSERT INTO Wynagrodzenia (Data_wyslania_wynagrodzenia,Kwota_wynagrodzenia, ID_Pracownika) VALUES (TO_DATE('10/10/2020', 'dd/mm/yyyy'), 2200, '3');
+INSERT INTO Wynagrodzenia (Data_wyslania_wynagrodzenia,Kwota_wynagrodzenia, ID_Pracownika) VALUES (TO_DATE('10/10/2020', 'dd/mm/yyyy'), 5200, '4');
+INSERT INTO Wynagrodzenia (Data_wyslania_wynagrodzenia,Kwota_wynagrodzenia, ID_Pracownika) VALUES (TO_DATE('10/10/2020', 'dd/mm/yyyy'), 2600, '5');
+
+
+INSERT INTO Sale(Numer_Sali, Maksymalna_Pojemnosc, Czy_Rzutnik, Czy_Internet, ID_Domu ) VALUES('1',  30, 'T', 'T', 1);
+INSERT INTO Sale (Numer_Sali, Maksymalna_Pojemnosc, Czy_Rzutnik, Czy_Internet, ID_Domu ) VALUES('2',  25, 'T', 'T', 1);
+INSERT INTO Sale (Numer_Sali, Maksymalna_Pojemnosc, Czy_Rzutnik, Czy_Internet, ID_Domu ) VALUES('3',  40, 'T', 'N', 1);
+INSERT INTO Sale (Numer_Sali, Nazwa_sali, Maksymalna_Pojemnosc, Czy_Rzutnik, Czy_Internet, ID_Domu ) VALUES('10','Informatyczna',  40, 'T', 'T', 1);
+
+
+INSERT INTO Wydarzenia (Nazwa_wydarzenia, Maksymalna_ilosc_uczestnikow, Wymagana_zgoda_rodzica, ID_domu) VALUES('Język Angielski', 25, 'N', 1);
+INSERT INTO Wydarzenia (Nazwa_wydarzenia, Maksymalna_ilosc_uczestnikow, Wymagana_zgoda_rodzica, ID_domu) VALUES('Nauka Tańca Towarzyskiego', 20, 'N', 1);
+INSERT INTO Wydarzenia (Nazwa_wydarzenia, Maksymalna_ilosc_uczestnikow, Wymagana_zgoda_rodzica, ID_domu) VALUES('Seans Młodzi Gniewni', 40, 'T', 1);
+INSERT INTO Wydarzenia (Nazwa_wydarzenia, Maksymalna_ilosc_uczestnikow, Wymagana_zgoda_rodzica, ID_domu) VALUES('Język Hiszpański', 25, 'N', 1);
+
+
+INSERT INTO Realizacje_Wydarzen (Data_wydarzenia, Cena, ID_Wydarzenia, ID_sali) VALUES (TO_DATE('11/12/2020 20:00:00', 'dd/mm/yyyy hh24:mi:ss'),  10.50, 1, 1);
+INSERT INTO Realizacje_Wydarzen (Data_wydarzenia, Cena, ID_Wydarzenia, ID_sali) VALUES (TO_DATE('14/11/2020 18:00:00', 'dd/mm/yyyy hh24:mi:ss'),  10, 2, 2);
+INSERT INTO Realizacje_Wydarzen (Data_wydarzenia, Cena, ID_Wydarzenia, ID_sali) VALUES (TO_DATE('15/12/2020 14:30:00', 'dd/mm/yyyy hh24:mi:ss'),  12.50, 3, 3);
+
+
+INSERT INTO Obslugiwanie_Wydarzenia (ID_Pracownika, ID_Realizacji_Wydarzenia) VALUES (1,1);
+INSERT INTO Obslugiwanie_Wydarzenia (ID_Pracownika, ID_Realizacji_Wydarzenia) VALUES (3,2);
+INSERT INTO Obslugiwanie_Wydarzenia (ID_Pracownika, ID_Realizacji_Wydarzenia) VALUES (2,3);
+
+
+INSERT INTO Zapisy_na_wydarzenie (ID_Uczestnika, ID_realizacji_wydarzenia, Data_zapisu) VALUES (1, 1, TO_DATE('08/10/2020', 'dd/mm/yyyy'));
+INSERT INTO Zapisy_na_wydarzenie (ID_Uczestnika, ID_realizacji_wydarzenia, Data_zapisu) VALUES (2, 1, TO_DATE('08/10/2020', 'dd/mm/yyyy'));
+INSERT INTO Zapisy_na_wydarzenie (ID_Uczestnika, ID_realizacji_wydarzenia, Data_zapisu) VALUES (3, 2, TO_DATE('08/10/2020', 'dd/mm/yyyy'));
+INSERT INTO Zapisy_na_wydarzenie (ID_Uczestnika, ID_realizacji_wydarzenia, Data_zapisu) VALUES (4, 3, TO_DATE('08/10/2020', 'dd/mm/yyyy'));
+
+
+INSERT INTO Typy_dokumentow (Nazwa_Dokumentu) VALUES ('Dyplom ukonczenia szkoy językowej');
+INSERT INTO Typy_dokumentow (Nazwa_Dokumentu) VALUES ('Dyplom ukonczenia szkoy tańca');
+INSERT INTO Typy_dokumentow (Nazwa_Dokumentu) VALUES ('Dyplom ukonczenia szkoy filmowej');
+
+
+INSERT INTO Specjalizacje (Nazwa_Specjalizacji) VALUES ('język agnielski');
+INSERT INTO Specjalizacje (Nazwa_Specjalizacji) VALUES ('język hiszpanski');
+INSERT INTO Specjalizacje (Nazwa_Specjalizacji) VALUES ('Nauczyciel tanga');
+INSERT INTO Specjalizacje (Nazwa_Specjalizacji) VALUES ('język rosyjki');
+
+
+INSERT INTO Typy_Zezwolen (Nazwa_Zezwolenia) VALUES ('Pozwolenia na organizacje wydarzeń masowych');
+INSERT INTO Typy_Zezwolen (Nazwa_Zezwolenia) VALUES ('Pozwolenia do ochrony budynku');
+
+
+INSERT INTO Prowadzacy (ID_Pracownika, Wyksztalcenie, Nr_dokumentu, Data_wydania_dokumentu, ID_Dokumentu) VALUES (1,'wyzsze', '45678946a', TO_DATE('11/01/2020', 'dd/mm/yyyy'), 1);
+INSERT INTO Prowadzacy (ID_Pracownika, Wyksztalcenie, Nr_dokumentu, Data_wydania_dokumentu, ID_Dokumentu) VALUES (5,'wyzsze', '45654f6a', TO_DATE('12/01/2020', 'dd/mm/yyyy'), 1);
+INSERT INTO Prowadzacy (ID_Pracownika, Wyksztalcenie, Nr_dokumentu, Data_wydania_dokumentu, ID_Dokumentu) VALUES (3,'wyzsze', '4dfgdsfa', TO_DATE('01/01/2020', 'dd/mm/yyyy'), 2);
+INSERT INTO Prowadzacy (ID_Pracownika, Wyksztalcenie, Nr_dokumentu, Data_wydania_dokumentu, ID_Dokumentu) VALUES (4,'srednie', '4dfgffff6a', TO_DATE('02/12/2010', 'dd/mm/yyyy'), 2);
+
+
+INSERT INTO Posiadanie_Specjalizacji (ID_Pracownika, ID_Specjalizacji) VALUES (1,1);
+INSERT INTO Posiadanie_Specjalizacji (ID_Pracownika, ID_Specjalizacji) VALUES (5,2);
+INSERT INTO Posiadanie_Specjalizacji (ID_Pracownika, ID_Specjalizacji) VALUES (3,3);
+INSERT INTO Posiadanie_Specjalizacji (ID_Pracownika, ID_Specjalizacji) VALUES (4,3);
+
+
+INSERT INTO Organizatorzy (ID_Pracownika, Nr_zezwolenia, Data_wydania_zezwolenia) VALUES (2, '5465456pa', TO_DATE('03/12/2019', 'dd/mm/yyyy'));
+
+
+INSERT INTO Posiadanie_Zezwolenia (ID_Pracownika, ID_Zezwolenia) VALUES (2,1);
+
